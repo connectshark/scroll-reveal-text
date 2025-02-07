@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  width: 90%;
+  margin-inline: auto;
+  line-height: 1.2;
+  padding: 6rem 0;
+}
+
+.container {
+  height: 300svh;
+  --gray: #aaaaaa;
+  --reveal: #ff00f7;
+}
+
+.box {
+  height: 100svh;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  display: inline;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, var(--reveal) calc(var(--progress, 0) * 100%), var(--gray) calc(var(--progress, 0) * 100%));
+}
